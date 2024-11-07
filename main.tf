@@ -6,6 +6,11 @@ terraform {
       version = ">=5.74.0"
     }
   }
+  backend "s3" {
+    bucket = "ada-s3-julio"
+    key    = "terraform/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
