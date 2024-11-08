@@ -14,5 +14,4 @@ resource "aws_rds_cluster" "database-1" {
   allocated_storage         = var.allocated_storage
   iops                      = var.iops
   master_username           = "admin"
-  master_password           = "senhaAd@"
 }
