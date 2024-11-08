@@ -39,8 +39,8 @@ resource "aws_instance" "ada-ec2-julio2" {
 }
 
 resource "aws_instance" "ada-ec2-julio3" {
-  ami           = "ami-063d43db0594b521b"
-  instance_type = "t2.micro"
+  ami                    = "ami-063d43db0594b521b"
+  instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   subnet_id              = aws_subnet.privadaapp-c.id
   tags = {
