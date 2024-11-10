@@ -18,6 +18,14 @@ resource "aws_vpc_security_group_ingress_rule" "allow_http" {
   to_port           = 80
 }
 
+resource "aws_vpc_security_group_egress_rule" "restrict_all" {
+  security_group_id = aws_security_group.allow_tls.id
+  cidr_ipv4         = "0.0.0.0/0"
+  ip_protocol       = "-1"
+  from_port         = 0
+  to_port           = 0
+}
+
 resource "aws_instance" "ada-ec2-julio1" {
   ami                    = "ami-063d43db0594b521b"
   instance_type          = "t2.micro"
