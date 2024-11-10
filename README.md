@@ -150,3 +150,6 @@ terraform destroy -auto-approve
 ```
 
 Este README fornece um guia passo a passo para configurar e rodar o projeto Terraform na sua máquina, além de explicar os principais comandos do Terraform.
+
+![Imagem da Infra](INFRAdaAWS.jpg)
+
