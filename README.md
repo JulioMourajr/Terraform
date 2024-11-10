@@ -122,6 +122,8 @@ terraform state
 - `ec2.tf`: Definição dos recursos EC2.
 - `s3.tf`: Definição dos recursos S3.
 - `vpc.tf`: Definição dos recursos VPC.
+- `cdn.tf`: Definição dos recursos CloudFront para distribuição de conteúdo.
+- `elb.tf`: Definição dos recursos Elastic Load Balancer (ELB) para balanceamento de carga.
 
 ## Observações
 
@@ -147,7 +149,7 @@ terraform destroy -auto-approve
 - [Documentação do Terraform](https://www.terraform.io/docs)
 - [Documentação da AWS](https://docs.aws.amazon.com/)
 
-```
+
 
 Este README fornece um guia passo a passo para configurar e rodar o projeto Terraform na sua máquina, além de explicar os principais comandos do Terraform.
 
